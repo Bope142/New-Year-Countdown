@@ -245,6 +245,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   overflow: hidden;
   background: #FFFFFF;
+  height: auto;
 }
 .left-menu h1 {
   font-family: "Righteous", cursive;
@@ -272,6 +273,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   padding: 15px;
+  height: auto;
   background: #b43a3a;
   background: -moz-linear-gradient(90deg, #b43a3a 49%, #fc7345 98%);
   background: -webkit-linear-gradient(90deg, #b43a3a 49%, #fc7345 98%);
@@ -391,7 +393,7 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 1000px) {
   .container {
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 100%;
   }
 }
 
