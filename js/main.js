@@ -1,13 +1,5 @@
 const christmasDay = new Date('Jan 01, 2023 00:00:00');
 const elment = document.getElementById('textVoeux');
-//new Typewriter(elment, {
-//        loop: true,
-//        deleteSpeed: 50
-//    })
-//    .typeString('Bonsoir à tous !')
-//    .pauseFor(800)
-//    .typeString('Comment vous allez !')
-//    .start()
 let idTimer = setInterval(() => setCountDown(christmasDay), 1000);
 const setCountDown = (countingDownTime) => {
     let now = new Date();
@@ -18,6 +10,8 @@ const setCountDown = (countingDownTime) => {
         document.querySelector('#hours').innerHTML = "0";
         document.querySelector('#minutes').innerHTML = "0";
         document.querySelector('#secondes').innerHTML = "0";
+        document.querySelector('.left-menu h1').innerHTML = "Heurese année 2023 !"
+        document.querySelector('#textVoeux').innerHTML = "Tous mes vœux de santé et de bonheur pour cette nouvelle année 2023. Je vous souhaite le meilleur, ainsi qu'à vos proches et une pleine réussite professionnelle. Que tous vos projets se réalisent."
     } else {
         let timeRemainling = countingDownTime - now;
         let secondeAbsolute = Math.floor(timeRemainling / 1000);
@@ -33,6 +27,7 @@ const setCountDown = (countingDownTime) => {
         document.querySelector('#hours').innerHTML = hours;
         document.querySelector('#minutes').innerHTML = minute;
         document.querySelector('#secondes').innerHTML = seconde;
+
     }
 
 }
