@@ -10,7 +10,7 @@ const setCountDown = (countingDownTime) => {
         document.querySelector('#hours').innerHTML = "0";
         document.querySelector('#minutes').innerHTML = "0";
         document.querySelector('#secondes').innerHTML = "0";
-        document.querySelector('.left-menu h1').innerHTML = "Heurese année 2023 !"
+        document.querySelector('.left-menu h1').innerHTML = "Heureuse année 2023 !"
         document.querySelector('#textVoeux').innerHTML = "Tous mes vœux de santé et de bonheur pour cette nouvelle année 2023. Je vous souhaite le meilleur, ainsi qu'à vos proches et une pleine réussite professionnelle. Que tous vos projets se réalisent."
     } else {
         let timeRemainling = countingDownTime - now;
